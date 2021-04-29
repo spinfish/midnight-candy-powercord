@@ -1,13 +1,11 @@
-$lollipop-icon: url(
-  'https://media.discordapp.net/attachments/678012423067926539/837304143449423882/lollipop.png'
-);
+@use '../../utils/variables' as *;
 
 // Thanks to LuckFire for showing me this!
 .childWrapper-anI2G9 {
   &::before {
     content: '';
     background: $lollipop-icon center/100% no-repeat;
-    padding: 21px;
+    padding: 32.5px;
   }
 
   svg {

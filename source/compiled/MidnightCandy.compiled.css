@@ -775,8 +775,8 @@
 
 .childWrapper-anI2G9::before {
   content: "";
-  background: url("https://media.discordapp.net/attachments/678012423067926539/837304143449423882/lollipop.png") center/100% no-repeat;
-  padding: 21px;
+  background: url("https://raw.githubusercontent.com/spinfish/midnight-candy-powercord/master/source/images/lollipop.svg") center/100% no-repeat;
+  padding: 32.5px;
 }
 .childWrapper-anI2G9 svg {
   display: none;
