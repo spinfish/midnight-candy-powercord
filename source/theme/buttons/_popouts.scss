@@ -1,0 +1,22 @@
+@use '../../utils/mixins' as *;
+
+#guild-header-popout-invite-people {
+  @include popout-button('rain');
+}
+
+#guild-header-popout-premium-subscribe {
+  @include popout-button('magenta');
+}
+
+.colorDanger-2qLCe1 {
+  color: var(--midnightcandy-brick);
+
+  &.focused-3afm-j,
+  &:active:not(.hideInteraction-1iHO1O) {
+    background-color: var(--midnightcandy-brick);
+  }
+}
+
+.colorDefault-2K3EoJ:not([class*='Danger']) {
+  @include popout-button;
+}

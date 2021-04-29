@@ -1,0 +1,73 @@
+@use 'sass:color';
+@use '../../utils/functions' as *;
+
+#app-mount {
+  .searchAnswer-3Dz2-q,
+  .searchFilter-2ESiM3 {
+    color: var(--text-normal);
+    background-color: var(--background-secondary);
+  }
+
+  .datePicker--XZbmJ {
+    background-color: var(--background-secondary-alt);
+  }
+}
+
+// Less nested to improve readability
+#app-mount .calendarPicker-2yf6Ci .react-datepicker {
+  background-color: inherit;
+
+  &__header {
+    background-color: inherit;
+  }
+
+  &__current-month {
+    color: var(--midnightcandy-lilac);
+    border: none;
+    font-size: 20px;
+  }
+
+  &__navigation {
+    &--next,
+    &--previous {
+      border-color: var(--background-tertiary);
+    }
+  }
+
+  &__day {
+    border-color: black;
+    color: var(--midnightcandy-magenta);
+    background-color: var(--background-modifier-hover);
+    font-weight: 550;
+
+    &:hover {
+      background-color: var(--background-secondary);
+      font-weight: bolder;
+    }
+
+    &--selected::after {
+      // Gotta do this cause sass doesn't support var() in functions
+      background-color: mix(get-colour('rain'), get-colour('magenta'));
+    }
+
+    &--outside-month {
+      opacity: 0.5;
+      color: var(--midnightcandy-sky);
+
+      &:hover {
+        opacity: initial;
+      }
+    }
+
+    &--disabled,
+    &--disabled:hover {
+      opacity: 0.2;
+      color: var(--midnightcandy-brick);
+    }
+
+    &-name {
+      color: var(--interactive-active);
+      font-weight: 700;
+    }
+  }
+}

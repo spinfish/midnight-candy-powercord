@@ -1,0 +1,49 @@
+@use '../../utils/functions' as funcs;
+
+// Thanks discord!
+#app-mount .theme-light .root-1gCeng {
+  box-shadow: none;
+  background-color: var(--background-secondary-alt);
+
+  .colorHeaderPrimary-26Jzh- {
+    color: var(--midnightcandy-sky);
+  }
+
+  // Template buttons
+  .container-UC8Ug1 {
+    border-color: var(--background-tertiary);
+    background-color: var(--background-primary);
+
+    &:hover {
+      background-color: var(--midnightcandy-silver);
+    }
+  }
+
+  .sampleLink-2NLvZg {
+    color: var(--midnightcandy-magenta);
+  }
+
+  .footer-2gL1pp {
+    box-shadow: none;
+    border-top: 1.5px solid var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+
+    .footerTitle-2CYZch {
+      color: var(--midnightcandy-rain);
+      margin-bottom: 16px;
+    }
+
+    .sizeMin-1mJd1x {
+      color: var(--midnightcandy-sky);
+    }
+
+    .footerButton-ayFTfX.lookFilled-1Gx00P {
+      box-shadow: 0 0 0 1px black;
+      background-color: funcs.fade('forest', 0.6);
+
+      &:hover {
+        background-color: funcs.fade('forest', 0.5);
+      }
+    }
+  }
+}

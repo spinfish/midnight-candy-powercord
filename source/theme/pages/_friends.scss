@@ -1,0 +1,36 @@
+#app-mount .itemCard-v9viV7 {
+  .body-1ld4H7 {
+    background-color: inherit;
+  }
+
+  .section-2gLsgF {
+    margin-top: 7.5px;
+    background-color: var(--background-secondary);
+  }
+
+  .separator-XqIyoz {
+    display: none;
+  }
+
+  &.interactive-3B9GmY:not(.active-1xchHY):hover {
+    background-color: var(--background-secondary-alt);
+  }
+
+  &.active-1xchHY {
+    background-color: var(--background-tertiary);
+  }
+}
+
+.peopleColumn-29fq28 {
+  background-color: var(--background-accent);
+
+  .peopleListItem-2nzedh {
+    border-radius: 10px;
+    padding: 0 15px;
+    margin-bottom: 4px;
+    background-color: var(--background-secondary-alt);
+    border: 1px solid var(--background-secondary-alt);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+  }
+}

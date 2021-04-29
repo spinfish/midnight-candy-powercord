@@ -1,0 +1,24 @@
+.channelTextArea-rNsIhG {
+  .scrollableContainer-2NUZem {
+    border-radius: 10px;
+  }
+
+  // Reply container above chat bar
+  .container-2fRDfG {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background-color: var(--channeltextarea-background);
+
+    .colorBrand-2tjs5J {
+      color: var(--interactive-active); // @ON
+    }
+
+    .colorMuted-HdFt4q {
+      color: var(--midnightcandy-sky); // @OFF
+    }
+
+    [class*='color']:hover {
+      color: var(--midnightcandy-rain);
+    }
+  }
+}

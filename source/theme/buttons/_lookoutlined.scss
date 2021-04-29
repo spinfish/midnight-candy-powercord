@@ -1,0 +1,11 @@
+@use '../../utils/variables' as vars;
+
+.lookOutlined-3sRXeN {
+  @each $type, $colour in vars.$btn-default-colours {
+    &.#{$type} {
+      color: var(--midnightcandy-#{$colour});
+      background-color: transparent;
+      border-color: var(--midnightcandy-#{$colour});
+    }
+  }
+}

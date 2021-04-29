@@ -1,0 +1,70 @@
+@use '../../utils/extends' as *;
+
+#app-mount .uploadModal-2ifh8j {
+  box-shadow: 0 0 2px 2px var(--background-tertiary);
+  background-color: var(--background-primary);
+
+  .filename-ovv3c5 {
+    color: var(--midnightcandy-rain);
+    margin-bottom: 6px;
+
+    + .colorHeaderSecondary-3Sp3Ft {
+      color: var(--midnightcandy-orchid);
+
+      strong {
+        color: var(--midnightcandy-forest);
+      }
+    }
+  }
+
+  .icon-kyxXVr:not(.image-2yrs5j) {
+    filter: invert(0.95); // Thanks D Mack#4481!
+  }
+
+  .scrollableContainer-2NUZem {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+
+    transition-duration: 0.2s;
+    transition-property: border-color, background-color;
+    transition-timing-function: ease-in-out;
+
+    &:hover {
+      @extend %generic-input;
+    }
+  }
+
+  .footer-3mqk7D {
+    box-shadow: none;
+    background-color: var(--background-secondary-alt);
+  }
+}
+
+.uploadModalIn-1z07Bv {
+  .uploadDropModal-2kTwbc {
+    &,
+    .bgScale-1otPtc {
+      background-color: var(--background-primary);
+    }
+
+    .inner-3nWsbo {
+      border-color: var(--midnightcandy-sky);
+
+      .title-2Vtl4y {
+        color: var(--midnightcandy-magenta);
+
+        > strong {
+          color: var(--midnightcandy-lichen);
+        }
+      }
+
+      .icons-1w691d {
+        filter: invert(0.95);
+      }
+
+      .instructions-2Du9gG {
+        color: var(--midnightcandy-salmon);
+      }
+    }
+  }
+}

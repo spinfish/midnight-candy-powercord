@@ -1,0 +1,22 @@
+@use 'functions' as funcs;
+
+%generic-input {
+  &:hover {
+    border-color: funcs.fade('sky', 0.3);
+  }
+
+  &:focus {
+    border-color: var(--midnightcandy-cotton-candy);
+  }
+}
+
+%message-bar {
+  border-radius: 8px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+
+  &:hover {
+    box-shadow: none;
+    background-color: var(--background-secondary-alt);
+  }
+}

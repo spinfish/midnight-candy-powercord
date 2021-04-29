@@ -1,0 +1,20 @@
+$lollipop-icon: url(
+  'https://media.discordapp.net/attachments/678012423067926539/837304143449423882/lollipop.png'
+);
+
+// Thanks to LuckFire for showing me this!
+.childWrapper-anI2G9 {
+  &::before {
+    content: '';
+    background: $lollipop-icon center/100% no-repeat;
+    padding: 21px;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.wrapper-1BJsBx.selected-bZ3Lue .childWrapper-anI2G9 {
+  background-color: var(--midnightcandy-lichen);
+}

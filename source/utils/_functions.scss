@@ -1,0 +1,10 @@
+@use 'sass:map';
+@use 'variables' as *;
+
+@function get-colour($name) {
+  @return map.get($base-colours, $name);
+}
+
+@function fade($colour, $amount) {
+  @return rgba(get-colour($colour), $amount);
+}

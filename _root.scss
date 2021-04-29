@@ -1,0 +1,59 @@
+@use 'sass:color';
+@use 'source/utils/functions' as *;
+@use 'source/utils/variables' as vars;
+
+.theme-dark,
+.theme-light,
+:root {
+  @each $colour, $value in vars.$base-colours {
+    --midnightcandy-#{$colour}: #{$value};
+  }
+
+  --background-accent: rgb(22, 22, 22);
+  --background-primary: var(--background-accent);
+
+  --background-secondary: rgb(17, 17, 17);
+  --background-secondary-alt: rgb(13, 13, 13);
+
+  --background-tertiary: rgb(1, 1, 1);
+  --background-floating: var(--background-tertiary);
+
+  --background-modifier-active: #{color.mix(get-colour('silver'), rgb(22, 22, 22))};
+  --background-modifier-selected: var(--background-modifier-active);
+
+  --header-primary: rgb(255, 255, 255);
+  --header-secondary: rgb(185, 187, 190);
+
+  --interactive-normal: var(--midnightcandy-light-grey);
+  --interactive-hover: var(--midnightcandy-rain);
+  --interactive-active: var(--midnightcandy-orchid);
+  --interactive-muted: rgb(90, 79, 79);
+
+  --text-normal: rgb(220, 221, 222);
+  --text-muted: var(--midnightcandy-dark-grey);
+  --text-link: var(--midnightcandy-mint);
+
+  --channels-default: var(--midnightcandy-light-grey);
+  --channeltextarea-background: var(--background-secondary-alt);
+  --radio-group-dot-foreground: var(--midnightcandy-rain);
+
+  --scrollbar-auto-track: transparent;
+  --scrollbar-thin-thumb: var(--background-tertiary);
+  --scrollbar-auto-thumb: var(--midnightcandy-silver);
+  --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thin-thumb);
+  --scrollbar-auto-scrollbar-color-track: var(--background-secondary);
+
+  --background-mobile-primary: var(--background-primary);
+  --background-mobile-secondary: var(--background-secondary);
+  --background-modifier-hover: var(--background-primary);
+
+  --background-mentioned: #{fade('yellow', 0.05)};
+  --background-help-warning: rgba(250, 166, 26, 0.1);
+  --background-help-info: rgba(0, 176, 244, 0.1);
+
+  --toast-background: var(--background-primary);
+  --toast-header: var(--background-tertiary);
+  --toast-contents: var(--background-secondary);
+  --toast-border: var(--background-tertiary);
+  --toast-box-shadow: rgba(0, 0, 0, 0.2);
+}

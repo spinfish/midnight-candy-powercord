@@ -1,0 +1,46 @@
+#app-mount {
+  .button-2CgfFz {
+    box-shadow: 0 0 0 1px black;
+    background-color: var(--background-tertiary);
+  }
+
+  .header-2RyJ0Y {
+    color: var(--midnightcandy-lilac);
+  }
+
+  .card-3Qj_Yx {
+    border-color: var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+  }
+
+  .css-gvi9bl-control {
+    border-color: var(--background-tertiary);
+  }
+
+  .css-3vaxre-menu {
+    border-color: var(--background-tertiary);
+    background-color: var(--background-secondary);
+  }
+
+  .card-FDVird {
+    box-shadow: none;
+
+    &::before {
+      border-color: var(--background-tertiary);
+      background-color: var(--background-secondary-alt);
+    }
+  }
+
+  // Careful - you have unsaved changes!
+  .elevationHigh-1PneE4 {
+    background-color: var(--background-secondary-alt) !important;
+  }
+
+  .h2-2gWE-o.defaultColor-1_ajX0 {
+    color: var(--midnightcandy-cotton-candy);
+  }
+
+  .divider-3wNib3 {
+    border-color: black !important;
+  }
+}

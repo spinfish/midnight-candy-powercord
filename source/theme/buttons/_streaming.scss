@@ -1,0 +1,15 @@
+@use '../../utils/functions' as *;
+
+#app-mount .item-3T2z1R {
+  border-color: var(--background-tertiary);
+
+  &.selectorButton-EEUWed {
+    &:hover {
+      background: transparent;
+    }
+
+    &.selectorButtonSelected-t5V9On {
+      background-color: var(--midnightcandy-rain);
+    }
+  }
+}

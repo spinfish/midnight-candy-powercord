@@ -1,0 +1,19 @@
+.container-3auIfb {
+  .slider-TkfMQL {
+    path {
+      fill: black;
+    }
+
+    rect {
+      fill: white;
+    }
+  }
+
+  &[style*='rgb(67, 181, 129)'] {
+    background-color: var(--midnightcandy-forest) !important;
+  }
+
+  &[style*='rgb(114, 118, 125)'] {
+    background-color: var(--midnightcandy-silver) !important;
+  }
+}

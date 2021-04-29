@@ -1,0 +1,22 @@
+@use '../../utils/extends' as *;
+@use '../../utils/functions' as funcs;
+
+#app-mount {
+  .nowPlaying-284llR {
+    background-color: var(--midnightcandy-forest);
+  }
+
+  .addGamePopout-2RY8Ju.elevationBorderHigh-2WYJ09 {
+    box-shadow: 0 0 0 1px var(--background-tertiary);
+    background-color: var(--background-secondary);
+  }
+
+  .game-1ipmAa .gameNameInput-385LoS {
+    @extend %generic-input;
+
+    &:hover,
+    &:focus {
+      background-color: var(--background-secondary);
+    }
+  }
+}

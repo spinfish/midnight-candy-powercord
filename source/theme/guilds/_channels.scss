@@ -1,0 +1,36 @@
+@use '../../utils/mixins' as *;
+
+.containerDefault-3tr_sE {
+  .name-3l27Hl,
+  .wrapper-PY0fhH {
+    color: var(--midnightcandy-sky);
+  }
+}
+
+.userLimit-3aerPX > .wrapper-2tAnRe {
+  border: 1px solid var(--background-tertiary);
+}
+
+.containerDefault--pIXnN {
+  @include guild-channel(var(--midnightcandy-cotton-candy));
+
+  &:hover {
+    @include guild-channel(var(--midnightcandy-magenta));
+  }
+
+  .unread-2lAfLh {
+    background-color: var(--midnightcandy-rain);
+  }
+
+  .modeUnread-1qO3K1 {
+    @include guild-channel(var(--midnightcandy-rain));
+  }
+
+  .modeMuted-onO3r- {
+    @include guild-channel(var(--interactive-muted));
+  }
+
+  .modeSelected-346R90 {
+    @include guild-channel(var(--midnightcandy-salmon));
+  }
+}

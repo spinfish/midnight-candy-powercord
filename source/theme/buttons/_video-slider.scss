@@ -1,0 +1,27 @@
+#app-mount .videoControls-2kcYic {
+  .buffer-26XPkd {
+    &,
+    &::before {
+      background: transparent;
+    }
+  }
+
+  .mediaBarProgress-1xaPtl {
+    &,
+    &::before,
+    &::after {
+      background-color: var(--midnightcandy-rain);
+    }
+  }
+
+  .mediaBarGrabber-1FqnbN {
+    background-color: var(--midnightcandy-magenta);
+  }
+
+  .mediaBarWrapper-3D7r67 {
+    &,
+    &::after {
+      background-color: var(--midnightcandy-dark-grey);
+    }
+  }
+}

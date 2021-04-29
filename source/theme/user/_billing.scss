@@ -1,0 +1,55 @@
+@use '../../utils/variables' as vars;
+
+.paymentHistory-2FXzro {
+  .paymentPane-3bwJ6A {
+    border: 1px solid var(--background-tertiary);
+  }
+
+  .paginator-166-09,
+  .paymentRow-2e7VM6 {
+    border: none;
+    background-color: var(--background-secondary);
+  }
+
+  .scrollerBase-289Jih {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid none solid;
+    width: 665px;
+  }
+
+  .gameIcon-gg34Dz {
+    background-image: vars.$mini-nitro-icon !important;
+  }
+
+  .summaryInfo-2QFKUg {
+    > .date-2Qr15l {
+      color: var(--midnightcandy-forest);
+    }
+
+    > .description-RQzS-K {
+      color: var(--midnightcandy-brick);
+    }
+
+    > .amount-ukM6w- {
+      color: var(--midnightcandy-magenta);
+    }
+  }
+
+  .hoverablePayment-Yc6mK7:hover {
+    background-color: var(--background-secondary-alt);
+  }
+
+  .expandedInfo-3kfShd {
+    background-color: var(--background-secondary-alt);
+
+    .paymentText-2vaF7U {
+      color: var(--text-normal);
+    }
+  }
+
+  .paymentHeader-3QlZQi,
+  .refundSubHeader-3hp-GM {
+    color: var(--midnightcandy-sky);
+  }
+}

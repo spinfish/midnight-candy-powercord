@@ -1,0 +1,9 @@
+@use '../../utils/functions' as funcs;
+
+.selectedBrand-1UKrSX {
+  background-color: var(--midnightcandy-rain);
+
+  &:hover {
+    background-color: funcs.fade('rain', 0.65);
+  }
+}

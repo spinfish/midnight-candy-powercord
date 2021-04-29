@@ -1,0 +1,25 @@
+.overflowRolesPopout-140n9i {
+  &[class*='popout'] {
+    overflow: auto;
+
+    // I tried as much as I could to customize it futher
+    // to no avail. Kept giving me the ugly default one
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  &[class*='popout'],
+  .overflowRolesPopoutArrow-2O66oH {
+    box-shadow: 0 0 0 1px var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+  }
+
+  .overflowRolesPopoutHeaderText-1SW-y3 {
+    color: var(--midnightcandy-forest);
+  }
+
+  .overflowRolesPopoutHeaderIcon-6PNEZA path {
+    fill: var(--midnightcandy-forest);
+  }
+}

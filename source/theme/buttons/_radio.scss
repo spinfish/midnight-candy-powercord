@@ -1,0 +1,29 @@
+@use 'sass:color';
+@use '../../utils/functions' as *;
+
+$-yellow-orange-mix: color.mix(get-colour('yellow'), get-colour('salmon'));
+
+.colorDefault-2K3EoJ .radioSelection-1HmrQS {
+  color: var(--radio-group-dot-foreground); 
+}
+
+.radioBar-bMNUI- {
+  border-width: 4px;
+
+  &[style*='#43b58'] {
+    // https://sass-lang.com/documentation/breaking-changes/css-vars
+    --radio-bar-accent-color: var(--midnightcandy-forest) !important;
+  }
+
+  &[style*='#faa61a'] {
+    --radio-bar-accent-color: var(--midnightcandy-yellow) !important;
+  }
+
+  &[style*='#f57731'] {
+    --radio-bar-accent-color: #{$-yellow-orange-mix} !important;
+  }
+
+  &[style*='#f04747'] {
+    --radio-bar-accent-color: var(--midnightcandy-brick) !important;
+  }
+}

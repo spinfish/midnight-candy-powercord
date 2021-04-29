@@ -1,0 +1,19 @@
+@use '../../utils/variables' as *;
+
+// Status in DM's
+.status-1XNdyw {
+  @each $status, $colour in $dm-status-mapping {
+    [mask*='#{$status}'] .status-1AY8sU {
+      background-color: $colour !important;
+    }
+  }
+}
+
+// Regular and typing
+.pointerEvents-2zdfdO {
+  @each $fill-hex, $new-colour in $status-hex-codes {
+    &[fill*='#{$fill-hex}'] {
+      fill: $new-colour;
+    }
+  }
+}

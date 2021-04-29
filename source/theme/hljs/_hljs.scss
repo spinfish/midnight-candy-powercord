@@ -1,0 +1,17 @@
+@use '../../utils/variables' as vars;
+
+@each $class, $colour in vars.$hljs-types {
+  .hljs-#{$class} {
+    color: $colour;
+  }
+}
+
+.hljs-params {
+  color: rgb(146, 147, 150);
+  font-style: italic;
+}
+
+.hljs-comment {
+  color: rgb(113, 113, 113);
+  font-style: italic;
+}

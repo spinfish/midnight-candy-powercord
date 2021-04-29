@@ -1,0 +1,8 @@
+{
+  "name": "Midnight Candy",
+  "description": "A sleek, dark pastel theme for Discord heavily based on the Midnight Candy Sublime Text theme.",
+  "version": "1.0.0",
+  "author": "mackenzie#0173",
+  "theme": "_index.scss",
+  "license": "MIT"
+}

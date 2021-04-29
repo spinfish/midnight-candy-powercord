@@ -1,0 +1,6 @@
+@use '../../utils/extends' as *;
+
+.inputDefault-_djjkz {
+  @extend %generic-input;
+  border-color: var(--background-tertiary);
+}

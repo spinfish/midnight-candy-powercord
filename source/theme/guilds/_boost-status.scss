@@ -1,0 +1,47 @@
+.content-22JeIO {
+  background-color: var(--background-primary);
+
+  .tierInProgress-3mBoXq {
+    background-color: var(--background-tertiary);
+  }
+
+  .bar-3S3dlZ {
+    color: var(--background-tertiary);
+  }
+
+  .tierHeaderContent-2-YfvN {
+    border-width: 1px;
+    border-style: solid solid none solid;
+    border-color: black;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    background-color: var(--background-secondary-alt);
+
+    > .tierLock-1oFMOZ path {
+      fill: var(--midnightcandy-dark-grey);
+    }
+  }
+
+  .tierBody-x9kBBp {
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-secondary);
+
+    .previousPerks-Dc7vdK {
+      font-weight: 515;
+      color: var(--midnightcandy-magenta);
+    }
+
+    .perks-2Ve4tD {
+      color: var(--midnightcandy-orchid);
+    }
+  }
+
+  ~ .divider-Uf0Wob {
+    margin: 20px 0;
+    background: none;
+  }
+
+  ~ .wrapper-1hrFc0 > h3 {
+    color: var(--midnightcandy-sky);
+  }
+}

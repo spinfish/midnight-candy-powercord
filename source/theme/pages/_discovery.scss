@@ -1,0 +1,28 @@
+#app-mount {
+  .pageWrapper-1PgVDX {
+    background-color: var(--background-primary);
+  }
+
+  .categoryItem-1QIroW {
+    color: var(--midnightcandy-sky);
+
+    &.selectedCategoryItem-FHKU_o > div {
+      color: var(--midnightcandy-magenta);
+      background-color: var(--background-modifier-selected);
+    }
+  }
+
+  .discoverHeader-Ijkm_M {
+    color: var(--midnightcandy-cotton-candy);
+  }
+
+  .guildListSection-2CS8vH {
+    > .guildList-3cJX3d .card-3DjzTQ {
+      box-shadow: 0 0 0 1px var(--background-tertiary);
+    }
+
+    > .wrapper-1sSZUt {
+      color: var(--midnightcandy-sky);
+    }
+  }
+}

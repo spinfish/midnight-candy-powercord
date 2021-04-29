@@ -1,0 +1,23 @@
+// Thanku LuckFire :>
+.botTag-2WPJ74 {
+  color: var(--background-tertiary);
+  background-color: var(--midnightcandy-forest);
+}
+
+.userPopout-3XzG_A {
+  width: 255px;
+  box-shadow: 0 0 0px 1px var(--background-tertiary);
+
+  .headerNormal-T_seeN {
+    background-color: var(--background-secondary-alt);
+  }
+
+  > [class^='header']:not(.headerNormal-T_seeN) {
+    background-color: var(--midnightcandy-silver);
+  }
+
+  > .footer-1fjuF6,
+  > .scrollerBase-289Jih {
+    background-color: var(--background-secondary);
+  }
+}

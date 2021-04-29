@@ -1,0 +1,45 @@
+@use '../../utils/functions' as funcs;
+
+.quickswitcher-3JagVE {
+  box-shadow: 0 0 2px 2px var(--background-tertiary);
+  background-color: var(--background-secondary-alt);
+
+  > .scrollerBase-289Jih {
+    background-color: inherit;
+
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
+
+  > .input-2VB9rf {
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-primary);
+  }
+
+  .header-13MUnb {
+    color: funcs.fade('sky', 0.95);
+  }
+
+  .resultFocused-3aIoYe {
+    background-color: funcs.fade('magenta', 0.1);
+
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid var(--midnightcandy-magenta);
+      height: 100%;
+    }
+  }
+
+  .badge-36LyGI {
+    background-color: var(--midnightcandy-brick);
+    width: 16px !important;
+    padding: inherit;
+    margin-left: 1px;
+    border-radius: 8px;
+    line-height: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+}

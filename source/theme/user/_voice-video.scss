@@ -1,0 +1,43 @@
+@use '../../utils/variables' as *;
+
+#app-mount .userSettingsVoice-iwdUCU {
+  .container-3PXSwK {
+    background: $microphone-test-gradient !important;
+
+    > .progress-1IcQ3A {
+      background-color: var(--interactive-muted);
+    }
+
+    > .notches-1sAcEM {
+      background-image: $voice-video-notches;
+    }
+  }
+
+  .inputSensitivityToggle-2LKb8o {
+    .speaking-2bFhO4 {
+      background-color: var(--midnightcandy-forest);
+    }
+
+    &.manual-36Evg9 {
+      .fill-3eUagR {
+        background-color: rgba(0, 0, 0, 0.45) !important;
+      }
+
+      [style*='rgb(251, 184, 72)'] { // Yellow
+        background-color: var(--midnightcandy-yellow) !important;
+      }
+
+      [style*='rgb(105, 196, 154)'] { // Green
+        background-color: var(--midnightcandy-forest) !important;
+      }
+    }
+  }
+
+  .previewOverlay-2O7_KC {
+    border: 1px solid var(--background-tertiary);
+  }
+
+  .previewOverlayInner-1WXURq {
+    background-color: var(--background-secondary);
+  }
+}

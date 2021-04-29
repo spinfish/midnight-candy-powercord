@@ -1,0 +1,77 @@
+@use '../../utils/functions' as funcs;
+
+#app-mount .message-2qnXI6 {
+  &:hover {
+    background-color: var(--background-secondary-alt);
+  }
+
+  .contents-2mQqc9 > .messageContent-2qWWxC {
+    color: var(--midnightcandy-orchid);
+  }
+
+  &.mentioned-xhSam7::before {
+    background-color: var(--midnightcandy-yellow);
+  }
+
+  &.ephemeral-1PsL1r,
+  &.replying-1x3H0T {
+    background-color: funcs.fade('rain', 0.075);
+
+    &::before {
+      background-color: var(--midnightcandy-sky);
+    }
+  }
+
+  .edited-3sfAzf,
+  .timestamp-3ZCmNB {
+    color: var(--midnightcandy-cotton-candy);
+  }
+
+  .repliedMessage-VokQwo {
+    &::before {
+      border-color: var(--midnightcandy-silver);
+    }
+
+    .replyBadge-r1su3o {
+      background: transparent;
+    }
+
+    .replyIcon-1b4Xjp {
+      width: 20px;
+      height: 10px;
+
+      path {
+        fill: white;
+      }
+    }
+
+    .repliedTextPreview-2NBljf {
+      color: var(--midnightcandy-magenta);
+
+      &:hover {
+        filter: brightness(125%);
+      }
+    }
+  }
+
+  .wrapper-2aW0bm {
+    background-color: var(--background-tertiary);
+
+    .button-1ZiXG9 {
+      color: var(--midnightcandy-light-grey);
+
+      &:hover:not(.dangerous-2r8KxV) {
+        background-color: var(--background-modifier-selected);
+      }
+
+      &.dangerous-2r8KxV {
+        color: var(--midnightcandy-brick);
+
+        &:hover {
+          color: white;
+          background-color: var(--midnightcandy-brick);
+        }
+      }
+    }
+  }
+}

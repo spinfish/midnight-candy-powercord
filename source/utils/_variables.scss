@@ -1,0 +1,112 @@
+@use 'sass:map';
+
+$nitro-header-gradient: linear-gradient(
+  to right,
+  var(--midnightcandy-rain),
+  var(--midnightcandy-magenta)
+);
+
+$base-colours: (
+  'salmon': rgb(245, 86, 37),
+  'brick': rgb(227, 60, 23),
+  'lilac': rgb(152, 112, 207),
+  'pink': rgb(255, 182, 193),
+  'mint': rgb(126, 242, 174),
+  'light-grey': rgb(179, 184, 199),
+  'dark-grey': rgb(121, 125, 138),
+  'silver': rgb(32, 34, 37),
+  'sky': rgb(123, 219, 219),
+  'rain': rgb(67, 152, 181),
+  'cotton-candy': rgb(255, 117, 188),
+  'orchid': rgb(244, 127, 255),
+  'forest': rgb(86, 176, 123),
+  'yellow': rgb(245, 192, 86),
+  'lichen': rgb(143, 188, 143),
+  'magenta': rgb(209, 36, 145)
+  // green 60, 76, 44
+);
+
+$btn-default-colours: (
+  'colorBrand-3pXr91': 'rain',
+  'colorPrimary-3b3xI6': 'dark-grey',
+  'colorGrey-2DXtkV': 'cotton-candy',
+  'colorGreen-29iAKY': 'forest',
+  'colorRed-1TFJan': 'brick',
+  'actionRed-gYn8D3': 'brick'
+);
+
+$mini-nitro-icon: url(
+  'https://discord.com/assets/386884eecd36164487505ddfbac35a9d.svg'
+);
+
+$microphone-test-gradient: linear-gradient(
+  to right,
+  var(--midnightcandy-brick),
+  var(--midnightcandy-salmon),
+  var(--midnightcandy-yellow),
+  var(--midnightcandy-forest),
+  var(--midnightcandy-sky)
+);
+
+$voice-video-notches: url(
+  "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='black'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 00-2 2v12a2 2 0 104 0V4a2 2 0 00-2-2z'/%3E%3C/svg%3E"
+);
+
+$dm-status-mapping: (
+  'dnd': var(--midnightcandy-brick),
+  'online': var(--midnightcandy-forest),
+  'idle': var(--midnightcandy-yellow),
+  'streaming': var(--midnightcandy-lilac),
+  'offline': var(--interactive-muted)
+);
+
+// I have it set up this way so it works for typing too
+$status-hex-codes: (
+  '#f04747': map.get($dm-status-mapping, 'dnd'),
+  '#43b581': map.get($dm-status-mapping, 'online'),
+  '#faa61a': map.get($dm-status-mapping, 'idle'),
+  '#593695': map.get($dm-status-mapping, 'streaming'),
+  '#747f8d': map.get($dm-status-mapping, 'offline')
+);
+
+// Pain and suffering and death
+$hljs-types: (
+  'built_in': rgb(108, 162, 181),
+  'literal': rgb(255, 148, 115),
+  'number': rgb(144, 193, 189),
+  'regexp': rgb(96, 137, 210),
+  'string': var(--midnightcandy-mint),
+  'subst': var(--midnightcandy-yellow),
+  'class': rgb(202, 175, 237),
+  'bullet': rgb(202, 175, 237),
+  'function': rgb(202, 175, 237),
+  'title': rgb(125, 187, 209),
+  'variable': rgb(125, 187, 209),
+  'template-variable': rgb(125, 187, 209),
+  'function .hljs-title': rgb(125, 187, 209),
+  'doctag': var(--midnightcandy-forest),
+  'type': rgb(42, 161, 152),
+  'meta': rgb(245, 97, 116),
+  'name': rgb(245, 97, 116),
+  'link': rgb(140, 166, 189),
+  'meta-string': rgb(140, 166, 189),
+  'section': rgb(157, 237, 229),
+  'tag': var(--midnightcandy-light-grey),
+  'template-tag': var(--midnightcandy-light-grey),
+  'attr': var(--midnightcandy-yellow),
+  'attribute': var(--midnightcandy-lichen),
+  'code': rgb(119, 238, 255),
+  'quote': rgb(245, 192, 86),
+  'selector-tag': var(--midnightcandy-magenta),
+  'selector-id': var(--midnightcandy-forest),
+  'strong': rgb(232, 110, 72),
+  'selector-attr': rgb(232, 110, 72),
+  'selector-class': rgb(232, 110, 72),
+  'class .hljs-title': rgb(232, 110, 72),
+  'selector-pseudo': rgb(168, 123, 219),
+  'addition': var(--midnightcandy-forest),
+  'deletion': var(--midnightcandy-brick),
+  'keyword': var(--midnightcandy-cotton-candy),
+  'emphasis': var(--midnightcandy-cotton-candy),
+  'meta-keyword': var(--midnightcandy-cotton-candy),
+);

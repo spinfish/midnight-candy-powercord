@@ -1,0 +1,20 @@
+@use '../../utils/variables' as vars;
+@use '../../utils/functions' as funcs;
+
+#app-mount .lookFilled-1Gx00P {
+  @each $type, $colour in vars.$btn-default-colours {
+    &.#{$type} {
+      color: white;
+      background-color: var(--midnightcandy-#{$colour});
+
+      &:hover {
+        background-color: funcs.fade($colour, 0.85);
+      }
+
+      &:active,
+      &:disabled {
+        background-color: funcs.fade($colour, 0.7);
+      }
+    }
+  }
+}

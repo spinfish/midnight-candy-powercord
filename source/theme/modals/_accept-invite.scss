@@ -1,0 +1,18 @@
+@use '../../utils/functions' as funcs;
+
+#app-mount .scroller-3__pG8 {
+  box-shadow: 0 0 2px 2px var(--background-tertiary);
+  background-color: var(--background-secondary);
+
+  .colorHeaderPrimary-26Jzh- {
+    color: var(--midnightcandy-sky);
+  }
+
+  .button-3k0cO7 {
+    background-color: funcs.fade('rain', 0.8);
+
+    &:hover {
+      background-color: funcs.fade('rain', 0.65);
+    }
+  }
+}

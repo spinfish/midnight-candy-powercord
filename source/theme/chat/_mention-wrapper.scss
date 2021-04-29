@@ -1,0 +1,10 @@
+@use '../../utils/functions' as funcs;
+
+.mention.wrapper-3WhCwL {
+  color: var(--midnightcandy-rain);
+  background-color: funcs.fade('sky', 0.1);
+
+  &:hover {
+    filter: brightness(140%);
+  }
+}

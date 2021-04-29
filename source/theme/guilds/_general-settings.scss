@@ -1,0 +1,17 @@
+@use '../../utils/extends' as *;
+
+#app-mount {
+  .colorPickerCustom-2CWBn2 {
+    border: none;
+    border-radius: 10px;
+    right: 80px;
+    position: relative;
+    box-shadow: 0 0 0 2px black;
+    background-color: var(--background-secondary-alt);
+  }
+
+  .emojiInput-1aLNse {
+    @extend %generic-input;
+    background-color: var(--background-secondary);
+  }
+}

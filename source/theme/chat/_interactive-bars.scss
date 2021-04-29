@@ -1,0 +1,20 @@
+@use '../../utils/extends' as *;
+
+.barButtonBase-2uLO1z {
+  color: var(--midnightcandy-sky);
+}
+
+.newMessagesBar-265mhP {
+  @extend %message-bar;
+
+  top: 7px;
+  height: 28px;
+}
+
+.jumpToPresentBar-G1R9s6 {
+  @extend %message-bar;
+
+  bottom: 13px;
+  max-height: 10px;
+  padding-bottom: 2px;
+}
