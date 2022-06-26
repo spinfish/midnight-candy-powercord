@@ -7,28 +7,28 @@
     color: var(--midnightcandy-sky);
   }
 
-  .barBackground-2EEiLw {
+  .barBackground-unEPDT {
     background-color: var(--background-tertiary)
   }
 
   // Greyed out first circle for servers with no boosts
-  .tierMarkerContainer-2BmgqV :first-child.tierMarkerInProgress-24LMzJ {
+  .tierMarkerContainer-18QTgJ :first-child.tierMarkerInProgress-2Tdxjz {
     background-color: var(--background-primary) !important;
   }
 
   // Prepare your eyes for terribad code
-  .tierMarkerGroup-xg6A1d {
-    :not(.selectedTier-1JkO7i) {
-      &[class*='Accomplished'].tierMarkerSelectable-3t7r2q {
+  .tierMarkerGroup-2udhIi {
+    :not(.selectedTier-24Xj0k) {
+      &[class*='Accomplished'].tierMarkerSelectable-2WVYV- {
         background-color: var(--midnightcandy-orchid) !important;
       }
 
-      :not([class*='Accomplished']).tierMarkerSelectable-3t7r2q {
+      :not([class*='Accomplished']).tierMarkerSelectable-2WVYV- {
         background-color: var(--background-primary) !important;
       }
     }
 
-    .tierMarkerBackground-3q29am {
+    .tierMarkerBackground-G8FoN4 {
       box-shadow: 0 0 0 1px var(--background-tertiary);
       background-color: var(--background-secondary-alt);
     }
